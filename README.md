@@ -4,7 +4,7 @@
 A Python backtesting tool with a **Streamlit UI** to validate trading strategies on historical data.  
 Built with **Pandas** for data handling, **Matplotlib** for charts, and **Alpha Vantage** for optional data fetching.
 
-## ✨ Features
+## Features
 - Load data from **CSV** or **Alpha Vantage API**.
 - Strategies included:
   - **SMA Crossover** (trend following)
@@ -18,7 +18,7 @@ Built with **Pandas** for data handling, **Matplotlib** for charts, and **Alpha 
 - Plots: price + signals, equity curve, drawdown.
 - One-click CSV downloads for signals, portfolio, and trades.
 
-## 📦 Project Structure
+## File Structure
 ```
 trading-backtester/
 ├── app.py                     # Streamlit UI (localhost app)
@@ -36,7 +36,7 @@ trading-backtester/
 └── README.md
 ```
 
-## 🚀 Quick Start (UI on localhost)
+## Quick Start (UI on localhost)
 
 1. **Create and activate a virtual environment** (recommended):
    ```bash
@@ -64,13 +64,13 @@ trading-backtester/
 - Recommended: `Open, High, Low, Close, Volume`.  
 - Example file is provided at `data/sample_data.csv` (synthetic).
 
-## 🧪 CLI Example (no UI)
+## CLI Example (no UI)
 Run a quick backtest from the terminal:
 ```bash
 python main.py
 ```
 
-## ⚙️ Configuration Notes
+## Config
 - **Position sizing**:
   - `fixed_shares`: buy this many shares on each buy signal.
   - `pct_equity`: allocate a fraction of *current cash* at each entry.
@@ -81,17 +81,14 @@ python main.py
   - `close`: uses same-day close for fills.
   - `next_open`: uses next day's open (falls back to close for the last row).
 
-## 📈 Strategy Ideas To Add Next
-- Momentum, MACD, SMA-EMA cross, multi-asset, short-selling, stop-loss/take-profit, walk-forward validation.
-
-## 🔑 Alpha Vantage Setup (Optional)
+## Alpha Vantage Setup 
 1. Get a free key from Alpha Vantage.
 2. Enter it in the Streamlit sidebar when selecting **Alpha Vantage**.
    - Or set an env var: `export ALPHAVANTAGE_API_KEY=your_key`
 
-## ✅ Requirements
+## Requirements
 - Python 3.10+
 - See `requirements.txt` for exact versions.
 
-## 📝 License
+## License
 MIT

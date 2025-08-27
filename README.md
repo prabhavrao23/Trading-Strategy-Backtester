@@ -4,6 +4,10 @@
 A Python backtesting tool with a **Streamlit UI** to validate trading strategies on historical data.  
 Built with **Pandas** for data handling, **Matplotlib** for charts, and **Alpha Vantage** for optional data fetching.
 
+## Demo
+
+[![Watch demo](https://img.youtube.com/vi/G6VFTrfPnF4/0.jpg)](https://youtu.be/G6VFTrfPnF4)
+
 ## Features
 - Load data from **CSV** or **Alpha Vantage API**.
 - Strategies included:
